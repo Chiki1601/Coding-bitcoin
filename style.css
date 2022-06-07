@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+body{
+  background: #424242;
+}
+.coin{
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  width: 240px;
+  height: 240px;
+  background: #FFC400;
+  border-radius: 50%;
+  transform: rotate3d(1,1,1,0deg) rotateY(0deg);
+  animation: rotate 12s infinite linear;
+}
+@keyframes rotate{
+  0%{
+      transform:rotate3d(1,1,1,0deg) rotateY(0deg);
+  }
+  10%{
+      transform:rotate3d(1,1,1,0deg)rotateY(30deg);
+  }
+  20%{
+      transform:rotate3d(1,1,1,0deg)rotateY(60deg);
+  }
+  30%{
+      transform:rotate3d(1,1,1,0deg)rotateY(90deg);
+  }
+  40%{
+      transform:rotate3d(1,1,1,0deg)rotateY(120deg);
+  }
+  50%{
+      transform:rotate3d(1,1,1,0deg)rotateY(150deg);
+  }
+  60%{
+      transform:rotate3d(1,1,1,0deg)rotateY(180deg);
+  }
+  70%{
+      transform:rotate3d(1,1,1,0deg)rotateY(210deg);
+  }
+  80%{
+      transform:rotate3d(1,1,1,0deg)rotateY(240deg);
+  }
+  90%{
+      transform:rotate3d(1,1,1,0deg)rotateY(270deg);rotate3d(1,1,1,0deg)
+  }
+  100%{
+      transform:rotate3d(1,1,1,0deg)rotateY(300deg);
+  }
+}
+.coin:before{
+  content: "";
+  position: absolute;
+  top: -6%;
+  left: -6.5%;
+  width: 240px;
+  height: 240px;
+  border: 15px solid #FFAB00;
+  border-radius: 50%;
+}
+.coin:after{
+  content: "</>";
+  position: absolute;
+  top: 13%;
+  font-size: 140px;
+  left: 22%;
+  font-family: 'Fjalla One', sans-serif;
+  color: #FFAB00;
+}
+.outline{
+  position: absolute;
+  top: 18%;
+  left: 48%;
+  width: 5px;
+  height: 150px;
+  background: black;
+  transform: rotate(8deg);
+  z-index: 1;
+  opacity: 5%;
+}
+.coutline{
+  width: 4px;
+  height: 53px;
+  position: absolute;
+  top: 31.5%;
+  left: 31%;
+  z-index: 1;
+  background: black;
+  transform: rotate(57deg);
+  opacity: 2%;
+}
+.coutline:before{
+  content:"";
+  display: block;
+  width: 4px;
+  height: 53px;
+  position: absolute; 
+  top: 17px;
+  left: 31px;
+  z-index: 1;
+  background: black;
+  transform: rotate(65deg);
+}
+.coutline:after{
+  content:"";
+  display: block;
+  width: 4px;
+  height: 7px;
+  position: absolute; 
+  top: 50px;
+  left: 5px;
+  z-index: 1;
+  background: black;
+  transform: rotate(-60deg);
+}
+.coutline1{
+  width: 4px;
+  height: 34px;
+  position: absolute;
+  top: 47%;
+  left: 66.5%;
+  z-index: 1;
+  background: black;
+  transform: rotate(61deg);
+  opacity: 2%;
+}
+.coutline1:before{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 34px;
+  position: absolute;
+  top: -30%;
+  left: -365%;
+  z-index: 1;
+  background: black;
+  transform: rotate(59deg);
+}
